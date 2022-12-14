@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+
+    <TextView
+        android:id="@+id/logoname"
+        android:layout_width="171dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="76dp"
+        android:text="Welcome"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/firstnameTitle"
+        android:layout_width="155dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="32dp"
+        android:text="Firstname:"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/emailTitle"
+        app:layout_constraintEnd_toStartOf="@+id/firstname"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/emailTitle"
+        android:layout_width="155dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="32dp"
+        android:text="Email:"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/ageTitle"
+        app:layout_constraintEnd_toStartOf="@+id/email"
+        app:layout_constraintHorizontal_bias="0.262"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/ageTitle"
+        android:layout_width="155dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="300dp"
+        android:text="Age:"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/age"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="176dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="184dp"
+        android:text="Logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/firstname"
+        android:layout_width="136dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="64dp"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="139dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="52dp"
+        app:layout_constraintBottom_toTopOf="@+id/age"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.972" />
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="125dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="68dp"
+        app:layout_constraintBottom_toTopOf="@+id/logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
